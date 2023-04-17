@@ -1,3 +1,4 @@
+import './NavBar.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import CartWidget from '../CartWidget/CartWidget';
 
@@ -9,8 +10,8 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="Celulares">Celulares</Nav.Link>
-            <Nav.Link href="#tablets">Tablets</Nav.Link>
-            <Nav.Link href="#notebooks">Notebooks</Nav.Link>
+            <Nav.Link href="Tablets">Tablets</Nav.Link>
+            <Nav.Link href="Notebooks">Notebooks</Nav.Link>
             <CartWidget/>
           </Nav>          
         </Navbar.Collapse>        
@@ -19,6 +20,4 @@ const NavBar = () => {
     );
   };
   
-  export default NavBar;
-
-    
+export default NavBar;

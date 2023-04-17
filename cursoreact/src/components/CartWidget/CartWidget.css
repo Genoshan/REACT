@@ -1,0 +1,15 @@
+.CartWidget {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CartWidget img {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.CartWidget span {
+  font-size: 18px;
+  color: white;
+}

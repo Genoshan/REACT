@@ -3,7 +3,7 @@ const products = [
         id: '1',
         name: 'Iphone 12',
         price: 1000,
-        category: 'celular',
+        category: 'Celular',
         img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2021?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1617135051000',
         stock: 25,
         description: 'Es un Iphone 12'
@@ -12,7 +12,7 @@ const products = [
         id: '2',
         name: 'Samsung S23',
         price: 800,
-        category: 'celular',
+        category: 'Celular',
         img: 'https://www.digitaltrends.com/wp-content/uploads/2023/02/samsung-galaxy-s23-ultra-green-back-6.jpg?p=1',
         stock: 25,
         description: 'Es un Samsung S23'
@@ -34,4 +34,12 @@ export const getProducts = () => {
             resolve(products)
         }, 500)
     }) 
+}
+
+export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === productId))
+        }, 500)        
+    })
 }
