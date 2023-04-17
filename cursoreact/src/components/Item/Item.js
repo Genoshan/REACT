@@ -22,10 +22,8 @@ const Item = ({id, name, img, price, stock}) => {
                     </p>                
                 </section>
                 <footer className="ItemFooter">
-                    <Link to={`/item/${id}`} className='Option'>Ver Detalles</Link>
-                    {/* <button className='Option'>Ver detalle</button> */}
-                </footer>
-                {/* <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)}/> */}
+                    <Link to={`/item/${id}`} className='Option'>Ver Detalles</Link>                    
+                </footer>                
             </article>        
     )
 }
