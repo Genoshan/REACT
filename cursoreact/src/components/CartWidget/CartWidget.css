@@ -13,3 +13,14 @@
   font-size: 18px;
   color: white;
 }
+
+
+.cart-widget {
+  display: flex;
+  align-items: center;
+}
+
+.cart-widget img {
+  height: 20px;
+  margin-right: 5px;
+}
