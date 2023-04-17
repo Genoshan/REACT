@@ -7,7 +7,7 @@ const CartWidget = () => {
   return (
     <Container>
       <Row>
-        <div className="d-flex align-items-right">
+        <div className="cart-widget align-items-right">
           <img src={cart} alt="cart-widget" />
           <span>0</span>
         </div>

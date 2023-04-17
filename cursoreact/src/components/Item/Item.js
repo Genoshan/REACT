@@ -1,5 +1,6 @@
 import './Item.css';
 import ItemCount from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
 
 const Item = ({id, name, img, price, stock}) => {
     return (        
@@ -21,7 +22,8 @@ const Item = ({id, name, img, price, stock}) => {
                     </p>                
                 </section>
                 <footer className="ItemFooter">
-                    <button className='Option'>Ver detalle</button>
+                    <Link to={`/item/${id}`} className='Option'>Ver Detalles</Link>
+                    {/* <button className='Option'>Ver detalle</button> */}
                 </footer>
                 {/* <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)}/> */}
             </article>        
