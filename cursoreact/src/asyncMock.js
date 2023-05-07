@@ -28,7 +28,7 @@ const products = [
     },
     {
         id: '4',
-        name: 'MacBook Pro Pro',
+        name: 'MacBook Pro',
         price: 3800,
         category: 'notebook',
         img: 'https://www.aptronixindia.com/media/catalog/product/m/b/mbp14-spacegray-select-202110_1_1.jpeg',
