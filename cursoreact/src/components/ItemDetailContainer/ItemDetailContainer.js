@@ -31,17 +31,6 @@ const ItemDetailContainer = ({ greeting }) => {
                 setLoading(false)
             })
     }, [itemId])
-
-    // useEffect(()=> {
-    //     getProductById(itemId)
-    //         .then(response => {
-    //             setProduct(response)
-    //         })
-    //         .catch(error => {
-    //             console.error(error)
-    //         })
-    // }, [itemId])
-
     return(
         <div className='ItemDetailContainer'>
             <ItemDetail {...producto} />

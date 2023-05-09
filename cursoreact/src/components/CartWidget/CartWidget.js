@@ -7,26 +7,16 @@ import { Link } from 'react-router-dom';
 const CartWidget = () => {
   const { totalQuantity } = useContext(CartContext)
   
+  console.log ("totalQuantity")
+  console.log (totalQuantity)
+  
   return (
-    <Link to='/cart' className='CartWidget' style={{ display: totalQuantity > 0 ? 'block' : 'none'}}>
+    <Link to='/cart' className='CartWidget' >
         <img className='CartImg' src={cart} alt='cart-widget'/>
-        { totalQuantity }
+        {totalQuantity ?? 0}
     </Link>  
   )
 }
   
-export default CartWidget  
-
-//   return (
-//     <Container>
-//       <Row>
-//         <div className="cart-widget align-items-right">
-//           <img src={cart} alt="cart-widget" />
-//           <span>0</span>
-//         </div>
-//       </Row>
-//     </Container>
-//   );
-// };
-
+export default CartWidget
 
