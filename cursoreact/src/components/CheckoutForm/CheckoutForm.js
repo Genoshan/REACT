@@ -6,7 +6,7 @@ const CheckoutForm =({ onConfirm }) => {
     const [email, setEmail] = useState('')
 
     const handleConfirm = (event) => {
-        event.preventDedault()
+        event.preventDefault()
 
         const userData = {
             name, phone, email
@@ -16,7 +16,7 @@ const CheckoutForm =({ onConfirm }) => {
     }
 
     return (
-        <div className="Container">
+         <div className="Container">        
             <form onSubmit={handleConfirm} className="Form">
                 <label className="Label">
                     Nombre
