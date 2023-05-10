@@ -10,6 +10,8 @@ const Checkout = () => {
     const [orderId, setOrderId] = useState('')
 
 const { cart, total, clearCart} = useContext(CartContext)
+console.log("Vemos el total: ")
+console.log(total)
 
 const createOrder = async({ name, phone, email}) => {
     setLoading(true)
@@ -68,7 +70,7 @@ const createOrder = async({ name, phone, email}) => {
         setLoading(false)
     }
 
-
+}
 if(loading) {
     return <h1>Se esta generando su orden...</h1>
 }
@@ -83,7 +85,7 @@ return (
         <CheckoutForm onConfirm={createOrder}/>
     </div>
 )
-}
+
 }
 
 export default Checkout
