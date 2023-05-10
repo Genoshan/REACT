@@ -10,8 +10,6 @@ const Checkout = () => {
     const [orderId, setOrderId] = useState('')
 
 const { cart, total, clearCart} = useContext(CartContext)
-console.log("Vemos el total: ")
-console.log(total)
 
 const createOrder = async({ name, phone, email}) => {
     setLoading(true)
@@ -32,11 +30,8 @@ const createOrder = async({ name, phone, email}) => {
 
         const ids = cart.map(prod => prod.id)
 
-        const productsRef = collection(db, 'products')
-
-        //const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(), 'in', id )))
+        const productsRef = collection(db, 'products')        
         const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(), 'in', ids)))
-
 
         const { docs } = productsAddedFromFirestore
 

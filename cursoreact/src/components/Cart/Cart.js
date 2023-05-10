@@ -29,9 +29,6 @@ const Cart = () => {
   
     return (
       <div>
-        {/* {cart.map((p) => (
-          <CartItem key={p.id} {...p} />
-        ))} */}
         { cart.map(p => <CartItem key={p.id} {...p}/>) }
         <header className="Header">
           <h3 className="ItemHeader">Total: ${total}</h3>
